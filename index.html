@@ -21,7 +21,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Home | TotalFreedom Minecraft Server</title>
-      <meta name="author" content="aggelosQQ, markbyron, DarthSalamon, Madgeek1450, TotalFreedom">
+      <meta name="author" content="aggelosQQ, scripthead">
       <meta name="keywords" content="TF,minecraft,totalfreedom,free op,server,worldedit,freebuild">
       <meta name="description" content="TotalFreedom is the first Free OP Minecraft server, which is up and running since 2010! play.totalfreedom.me">
       <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
@@ -29,8 +29,8 @@
       <link async rel="stylesheet" href="css/component.min.css">
       <link async rel="stylesheet" href="css/global.css">
       <link async rel="stylesheet" href="css/main.css">
-      <link async rel=”icon” href=”favicon.ico” type=”image/x-icon”>
-      <link async rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon”>
+      <link async rel="icon" href="favicon.png" type="image/png">
+      <link async rel="shortcut icon" href="favicon.png" type="image/png">
       <script>! function(a, b, c, d, e, f, g){a.GoogleAnalyticsObject=e, a[e]=a[e] || function(){(a[e].q=a[e].q || []).push(arguments)}, a[e].l=1 * new Date, f=b.createElement(c), g=b.getElementsByTagName(c)[0], f.async=1, f.src=d, g.parentNode.insertBefore(f, g)}(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-74643356-2", "auto"), ga("send", "pageview"); </script>
    </head>
    <body>
@@ -42,24 +42,28 @@
                <ul class="right hide-on-med-and-down cl-effect-14" id="cl-effect-14">
                   <li><a href="#" id="top">Home</a></li>
                   <li><a href="#" id="rules">Rules</a></li>
+                  <li><a href="/emailappeal">Email Appeal</a></li>
                   <li><a href="#" id="staff">Staff</a></li>
-                  <li><a href="masterbuilders/">Masterbuilders</a></li>
-                  <li><a href="http://totalfreedom.boards.net" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="You will be redirected to totalfreedom.boards.net">Forum</a></li>
+                  <li><a href="/masterbuilders">Masterbuilders</a></li>
+                  <li><a href="https://totalfreedom.boards.net" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="You will be redirected to totalfreedom.boards.net">Forum</a></li>
                </ul>
                <ul class="side-nav" id="mobile">
                   <li><a href="#header">Home</a></li>
                   <li><a href="#rules">Rules</a></li>
+                  <li><a href="/emailappeal">Email Appeal</a></li>
                   <li><a href="#staff">Staff</a></li>
                   <li><a href="masterbuilders/">Masterbuilders</a></li>
-                  <li><a href="http://totalfreedom.boards.net">Forum</a></li>
+                  <li><a href="https://totalfreedom.boards.net">Forum</a></li>
                </ul>
             </div>
          </nav>
       </div>
+      <a href="https://github.com/TFPatches/Website" class="github" aria-hidden="true"><span class="github-icon"></span> Edit on GitHub</a>
       <div class="section active cover-1" id="header">
          <div class="online-part">
             <h3 id="server-status"> <span id="online"></span></h3>
             <a href="#onlineplayers" class="button modal-trigger" data-target="onlineplayers">Online Players</a>
+            <p style="font-size: 1em;line-height: 69px;" id="lastupdate"></p>
          </div>
          <div id="onlineplayers" class="modal modal-fixed-footer">
             <div class="modal-content">
@@ -85,7 +89,7 @@
          </div>
          <div class="rules-section">
             <h2 id="rules-title" class="two waves-effect waves-brown">No Imposing <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <p class="rule b">Do not pose as the server owner (TheMinecraft) and do not pose as an admin or one of the other regular players that use Total Freedom. By imposing, that means you are using a program such as MinecraftSP, changing your nick or using a tag to make yourself appear as a member of staff. You may not use nicks or tags that imply you have an official position on the server. This includes any nick or tag including the words admin, senior, owner, telnet, builder, architect, coder, dev, programmer, mod, security, or any nick or tag that the owner or a senior admin believes is an attempt to impose or show that you have an invalid staff position. In such cases, the offender will be de-nicked, have their tag removed or could be banned depending if the offense repeats itself. Changing your in-game name to a  "famous" (like Notch) via a hacked client is okay provided you do not use it to violate the rules of the server. In such cases, the offender's IP may be banned or permbanned based on the severity of the action.</p>
+            <p class="rule b">Do not pose as the server owner (scripthead) and do not pose as an admin or one of the other regular players that use Total Freedom. By imposing, that means you are using a program such as MinecraftSP, changing your nick or using a tag to make yourself appear as a member of staff. You may not use nicks or tags that imply you have an official position on the server. This includes any nick or tag including the words admin, senior, owner, telnet, builder, architect, coder, dev, programmer, mod, security, or any nick or tag that the owner or a senior admin believes is an attempt to impose or show that you have an invalid staff position. In such cases, the offender will be de-nicked, have their tag removed or could be banned depending if the offense repeats itself. Changing your in-game name to a  "famous" (like Notch) via a hacked client is okay provided you do not use it to violate the rules of the server. In such cases, the offender's IP may be banned or permbanned based on the severity of the action.</p>
          </div>
          <div class="rules-section">
             <h2 id="rules-title" class="three waves-effect waves-brown">Respect Privacy <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
@@ -97,12 +101,12 @@
          </div>
          <div class="rules-section">
             <h2 id="rules-title" class="five waves-effect waves-brown">Adhere to Authority <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <p class="rule e">Do not override the actions of the server owner (TheMinecraft) or other admins. For example, if an admin de-ops or bans a player for griefing, you may not re-op or pardon them without permission. Super admins will follow the directions of senior admins with respect to any admin matter unless it violates server rules. If it violates the rules, the admin will notify the proper authority.</p>
+            <p class="rule e">Do not override the actions of the server owners or other admins. For example, if an admin de-ops or bans a player for griefing, you may not re-op or pardon them without permission. Super admins will follow the directions of senior admins with respect to any admin matter unless it violates server rules. If it violates the rules, the admin will notify the proper authority.</p>
          </div>
-         <p class="caution" style="margin-bottom: -45px;"><i class="fa fa-exclamation-triangle"></i> TotalFreedom does not accept donations.</p>
+         <!--<p class="caution" style="margin-bottom: -45px;"><i class="fa fa-exclamation-triangle"></i> TotalFreedom does not accept donations.</p>-->
          <ul class="rest">
             <li>
-               <a href="conduct.html" class="readmore waves-effect waves-light">Read the Conduct Policy</a>
+               <a href="https://totalfreedom.boards.net/thread/65799" class="readmore waves-effect waves-light">Read the Conduct Policy</a>
             </li>
          </ul>
          <h1 class="section-title">Support/Help</h1>
@@ -122,106 +126,74 @@
       </div>
       <div class="section cover-3" id="staff-sec">
       <br/>
-      <h1 class="section-title">Upper-Level Staff Members</h1>
+      <h1 class="section-title" style="margin-bottom: 10px;">Upper-Level Staff Members</h1>
+      <h3>Last updated July 17th, 2020</h3>
       <div class="admins">
-      <h2 class="rank">Global Forum Moderators</h2>
+      <h2 class="rank">Forum Staff</h2>
       <ul id="modboard">
-         <a href="http://www.twitter.com/Fiinest95" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Finest95/80.png" class="responsive-img head-icon">Finest95 - Forum Owner & Manager</li>
+         <a href="https://totalfreedom.boards.net/user/1" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 - Forum Owner & Manager</li>
          </a>
-         <a href="http://www.twitter.com/totalfreedommc" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="images/markbyron.png" class="responsive-img head-icon">MarkByron</li>
+         <a href="https://totalfreedom.boards.net/user/20408" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead - Forum Admin</li>
          </a>
-         <a href="http://www.twitter.com/totalfreedommc" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/TheMinecraft/80.png" class="responsive-img head-icon">TheMinecraft</li>
+         <a href="https://totalfreedom.boards.net/user/10099" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/StevenNL2000/32.png" class="responsive-img head-icon">StevenNL2000 - Forum Admin</li>
          </a>
-         <a href="http://www.twitter.com/JeromSar" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Prozza/80.png" class="responsive-img head-icon">Prozza</li>
+         <a href="https://totalfreedom.boards.net/user/22952" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu - Forum Admin</li>
          </a>
-         <a href="http://totalfreedom.boards.net/user/1514" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Madgeek1450/80.png" class="responsive-img head-icon">Madgeek1450</li>
+         <a href="https://totalfreedom.boards.net/user/10700" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/JJ_Jaguar2000/32.png" class="responsive-img head-icon">JJ_Jaguar2000 - Forum Mod</li>
          </a>
-         <a href="https://keybase.io/cowgomooo12" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/cowgomooo12/80.png" class="responsive-img head-icon">Cowgomooo12</li>
+         <a href="https://totalfreedom.boards.net/user/84" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/Cowgomooo12/32.png" class="responsive-img head-icon">Cowgomooo12 - Forum Mod</li>
          </a>
-         <a href="htttps://twitter.com/OliverDatGuy" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/OliverDatGuy/80.png" class="responsive-img head-icon">OliverDatGuy</li>
-         <a href="http://totalfreedom.boards.net/user/246" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/inFAmas97/80.png" class="responsive-img head-icon">inFAmas97</li>
-         </a>
-         <a href="http://totalfreedom.boards.net/user/47" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/EnderLolzeh/80.png" class="responsive-img head-icon">EnderLolzeh</li>
-         </a>
-         <a href="http://totalfreedom.boards.net/user/10099" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/StevenNL2000/80.png" class="responsive-img head-icon">StevenNL2000</li>
+         <a href="https://totalfreedom.boards.net/user/3448" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/TheMinecraft/32.png" class="responsive-img head-icon">TheMinecraft - Forum Mod</li>
          </a>
       </ul>
       <h2 class="rank">Executives</h2>
       <ul id="executiveboard">
-         <a href="https://www.twitter.com/totalfreedommc" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/TheMinecraft/80.png" class="responsive-img head-icon">TheMinecraft - Owner </li>
+         <a href="https://totalfreedom.boards.net/user/20408" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead - Owner</li>
          </a>
-         <a href="https://www.twitter.com/TotalFreedomFdr" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="images/markbyron.png" class="responsive-img head-icon">MarkByron - Founder </li>
+         <a href="https://totalfreedom.boards.net/user/3" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/markbyron/32.png" class="responsive-img head-icon">markbyron - Founder</li>
          </a>
-         <a href="http://totalfreedom.boards.net/user/1514" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Madgeek1450/80.png" class="responsive-img head-icon">Madgeek1450 - Co-Founder </li>
+         <a href="https://totalfreedom.boards.net/user/1514" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/Madgeek1450/32.png" class="responsive-img head-icon">Madgeek1450 - Co-Founder</li>
          </a>
-         <!-- <a href="https://www.twitter.com/JeromSar" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Prozza/80.png" class="responsive-img head-icon">Prozza - Lead Developer </li>
-         </a> -->
-         <a href="https://www.twitter.com/Fiinest95" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Finest95/80.png" class="responsive-img head-icon">Finest95 - Forum Owner & Manager </li>
+         <a href="https://totalfreedom.boards.net/user/1" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 - Forum Owner & Manager</li>
          </a>
-         <a href="http://totalfreedom.boards.net/user/246" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/inFamas97/80.png" class="responsive-img head-icon">inFAmas97 - Admin Officer </li>
+         <a href="https://totalfreedom.boards.net/user/22952" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu - Admin Officer</li>
          </a>
-         <a href="http://totalfreedom.boards.net/user/10099" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/StevenNL2000/80.png" class="responsive-img head-icon">StevenNL2000 - Security Officer </li>
-         </a>
-         <a href="http://totalfreedom.boards.net/user/18638" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/BuscusFan/80.png" class="responsive-img head-icon">BuscusFan - Associated Server Liaison </li>
-         </a>
-         <a href="http://totalfreedom.boards.net/user/5473" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/xfilez/80.png" class="responsive-img head-icon">xfilez - Creative Designer </li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/3328" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/_flippy/80.png" class="responsive-img head-icon">_flippy - Support and Advertising Manager </li>
-         </a>
-         <a href="https://keybase.io/aggelosQQ" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="images/aggelosqq.png" class="responsive-img head-icon">aggelosQQ - Website Developer </li>
+         <a href="https://totalfreedom.boards.net/user/23874" target="_blank" class="waves-effect waves-dark">
+           <li> <img src="https://mc-heads.net/avatar/rongga/32.png" class="resonsive-img head-icon">rongga - Creative Designer</li>
+         <a href="https://totalfreedom.boards.net/user/19507" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/DarthZonarius/32.png" class="responsive-img head-icon">DarthZonarius  - Server Liaison</li>
          </a>
       </ul>
       <h2 class="rank">Assistant Executives</h2>
       <ul id="assisexecboard">
-         <a href="http://totalfreedom.boards.net/user/10700" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/JJ_Jaguar2000/80.png" class="responsive-img head-icon">JJ_Jaguar2000 - Admin Officer </li>
+         <a href="https://totalfreedom.boards.net/user/22775" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/fiogga/32.png" class="responsive-img head-icon">fiogga - Assistant Admin Officer</li>
          </a>
-         <a href="http://totalfreedom.boards.net/user/4654" target="_blank" class="waves-effect waves-dark">
-        <li> <img src="https://minotar.net/avatar/Hockeyfan360/80.png" class="resonsive-img head-icon">Hockeyfan360 - Admin Officer</li>
-        </a>
-         <a href="http://totalfreedom.boards.net/user/47" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/EnderLolzeh/80.png" class="responsive-img head-icon">EnderLolzeh - Admin Officer </li>
-            <a href="http://totalfreedom.boards.net/user/13046" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://minotar.net/avatar/TheCool1Mike/80.png" class="responsive-img head-icon">TheCool1Mike - Security Officer </li>
-            </a>
-            <a href="http://totalfreedom.boards.net/user/527" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://minotar.net/avatar/mibbzz/80.png" class="responsive-img head-icon">mibbzz - Security Officer </li>
-            </a>
+         <a href="https://totalfreedom.boards.net/user/23832" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/zevante/32.png" class="responsive-img head-icon">zevante - Internal Affairs</li>
          </a>
-         <a href="https://totalfreedom.boards.net/user/22926" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/serrif/80.png" class="responsive-img head-icon">serrif - Creative Designer </li>
-         </a>        
-         <a href="http://totalfreedom.boards.net/user/954" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/Wade_Smith/80.png" class="responsive-img head-icon">Wade_Smith - Associated Server Liaison </li>
+         <a href="https://totalfreedom.boards.net/user/23930" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/lyicx/32.png" class="responsive-img head-icon">lyicx - Assistant Server Liaison</li>
+         </a>
+         <a href="https://totalfreedom.boards.net/user/21917" target="_blank" class="waves-effect waves-dark">
+            <li> <img src="https://mc-heads.net/avatar/squareMC/32.png" class="responsive-img head-icon">squareMC - Assistant Creative Designer</li>
          </a>
       </ul>
-         <!-- <a href="http://totalfreedom.boards.net/user/3328" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://minotar.net/avatar/_flippy/80.png" class="responsive-img head-icon">_flippy - Support and Advertising Manager </li>
-         </a> -->
       <div class="container">
          <ul class="rest">
-            <li><a href="staff.html" class="readmore waves-effect waves-light">See the rest of the staff</a></li>
+            <li><a href="/staff" class="readmore waves-effect waves-light">See the rest of the staff</a></li>
             <br/>
          </ul>
          <br/>
@@ -234,7 +206,7 @@
                   <a href="http://totalfreedom.boards.net" target="_blank" class="readmore waves-effect waves-dark">
                      <li><i class="fa fa-comments icon"></i><br/> Forum</li>
                   </a>
-                  <a href="http://totalfreedom.boards.net/thread/21065/server-conduct-policy-players-admins" target="_blank" class="readmore waves-effect waves-dark">
+                  <a href="https://totalfreedom.boards.net/thread/65799" target="_blank" class="readmore waves-effect waves-dark">
                      <li><i class="fa fa-ban icon"></i><br/> Conduct Policy</li>
                   </a>
                   <a href="http://github.com/TotalFreedom" target="_blank" class="readmore waves-effect waves-dark">
@@ -255,11 +227,6 @@
                <hr>
                <br>
                <p align="center" class="text-align: center;">
-               <ul class="rest">
-                  <li>
-                     <a href="http://totalfreedom.boards.net/thread/35427/totalfreedom-discord-server" class="readmore waves-effect waves-light" style="font-size: 1em; margin-top: -90px;">Read more about our Discord Server</a></p>
-                  </li>
-               </ul>
             </div>
          </div>
          <footer class="page-footer transparent">
@@ -268,7 +235,7 @@
                   <div class="container">
                      <hr>
                      TotalFreedom &copy; 2010 - <span id="curYear"></span>
-                     <a class="grey-text text-lighten-4 right" href="https://aggelosqq.com" target="_blank"><img src="https://aggelosqq.com/images/watermarks/agg-white.svg" width="120" style="margin-top: -25px;" /></a>
+                     <a class="grey-text text-lighten-4 right" href="https://aggelosqq.com" target="_blank">Designed by aggelosQQ</a>
                   </div>
                </div>
             </div>

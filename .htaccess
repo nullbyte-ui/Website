@@ -2,7 +2,9 @@ Options -Indexes
 ErrorDocument 403 "<a href='https://totalfreedom.me'><img src='https://totalfreedom.me/images/403.png' /></a>"
 ErrorDocument 404 "<a href='https://totalfreedom.me'><img src='https://totalfreedom.me/images/404.png' /></a>"
 
-Redirect 301 /staff/ /staff.html
-Redirect 301 /conduct/ /conduct.html
+Require all granted
 
-
+RedirectMatch permanent /adminapp https://totalfreedom.boards.net/thread/64359
+RedirectMatch permanent /banappeal https://totalfreedom.boards.net/thread/64391
+RedirectMatch permanent /permbanappeal https://totalfreedom.boards.net/thread/66099
+RedirectMatch permanent /mbapp https://totalfreedom.boards.net/thread/65477

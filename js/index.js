@@ -24,14 +24,15 @@ $(document).ready(function() {
         interval);
 
     var refresh = function() {
-        $.getJSON("https://totalfreedom.me/status.php", function(json) {
-            if (json.status !== true) {
-                $("#online").html('<span style="color: firebrick; font-weight: bolder;"> Server is Offline</span><br/><small style="font-size: .5em;">Check out our <a href="status">Associated Servers</a>!</small>');
+        $.getJSON(window.location.origin + "/tfinfo/ping.php", function(json) {
+            if (json.online !== true) {
+                $("#online").html('<span style="color: firebrick; font-weight: bolder;"> Server is Offline</span><br/><small style="font-size: .5em;">Check out our <a href="https://totalfreedom.boards.net/thread/49450">Associated Servers</a>!</small><p style="font-size: .40em;line-height: 50px;">Last updated ' + json.lastupdated + ' ago</p>');
                 $(".button").hide();
             } else {
                 $("#online").html('TotalFreedom has  <font color="green" style="font-weight:300;">' + json.players.online + '</font> players online!<br/>');
                 $("#players-online").html('<font color="green" style="font-weight:900;">' + json.players.online + '</font> Online Players!');
                 $('.button').show();
+                $("#lastupdate").html("Last updated " + json.lastupdated + " ago");
             }
         });
         autoRefresh;

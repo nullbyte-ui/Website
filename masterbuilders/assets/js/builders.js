@@ -23,11 +23,11 @@ $(document).ready(function() {
 });
 
 $(function(){
-   $(".build").slice(0, 6).show(); // select the first ten
-   $("#load").click(function(e){ // click event for load more
+   $(".build").slice(0, 6).show();
+   $("#load").click(function(e){
        e.preventDefault();
-       $("div:hidden").slice(0, 6).show(); // select next 10 hidden divs and show them
-       if($("div:hidden").length == 0){ // check if any hidden divs still exist
+       $("div:hidden").slice(0, 6).show();
+       if($("div:hidden").length == 0){
             $("#load").hide();
        }
    });

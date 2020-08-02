@@ -16,15 +16,15 @@
    
 */
 
-$(document).ready(function() {
-   var interval = 15000;
-    var autoRefresh = setTimeout(function() {
+$(document).ready(function () {
+    var interval = 15000;
+    var autoRefresh = setTimeout(function () {
             refresh();
         },
         interval);
 
-    var refresh = function() {
-        $.getJSON(window.location.origin + "/tfinfo/ping.php", function(json) {
+    var refresh = function () {
+        $.getJSON(window.location.origin + "/tfinfo/ping.php", function (json) {
             if (json.online !== true) {
                 $("#online").html('<span style="color: firebrick; font-weight: bolder;"> Server is Offline</span><br/><small style="font-size: .5em;">Check out our <a href="https://totalfreedom.boards.net/thread/49450">Associated Servers</a>!</small><p style="font-size: .40em;line-height: 50px;">Last updated ' + json.lastupdated + ' ago</p>');
                 $(".button").hide();
@@ -41,82 +41,82 @@ $(document).ready(function() {
 });
 
 
-    $(document).ready(function(){
-        $(".one").click(function(){
-            $(".a").fadeToggle(300);
-            $(".one i").toggleClass("fa-chevron-right");
-            $(".one i").toggleClass("fa-chevron-down");
-        });
+$(document).ready(function () {
+    $(".one").click(function () {
+        $(".a").fadeToggle(300);
+        $(".one i").toggleClass("fa-chevron-right");
+        $(".one i").toggleClass("fa-chevron-down");
+    });
 
-        $(".two").click(function(){
-            $(".b").fadeToggle(300);
-            $(".two i").toggleClass("fa-chevron-right");
-            $(".two i").toggleClass("fa-chevron-down");
-        });
+    $(".two").click(function () {
+        $(".b").fadeToggle(300);
+        $(".two i").toggleClass("fa-chevron-right");
+        $(".two i").toggleClass("fa-chevron-down");
+    });
 
-        $(".three").click(function(){
-            $(".c").fadeToggle(300);
-            $(".three i").toggleClass("fa-chevron-right");
-            $(".three i").toggleClass("fa-chevron-down");
-        });
+    $(".three").click(function () {
+        $(".c").fadeToggle(300);
+        $(".three i").toggleClass("fa-chevron-right");
+        $(".three i").toggleClass("fa-chevron-down");
+    });
 
-        $(".four").click(function(){
-            $(".d").fadeToggle(300);
-            $(".four i").toggleClass("fa-chevron-right");
-            $(".four i").toggleClass("fa-chevron-down");
-        });
+    $(".four").click(function () {
+        $(".d").fadeToggle(300);
+        $(".four i").toggleClass("fa-chevron-right");
+        $(".four i").toggleClass("fa-chevron-down");
+    });
 
-        $(".five").click(function(){
-            $(".e").fadeToggle(300);
-            $(".five i").toggleClass("fa-chevron-right");
-            $(".five i").toggleClass("fa-chevron-down");
-        });
+    $(".five").click(function () {
+        $(".e").fadeToggle(300);
+        $(".five i").toggleClass("fa-chevron-right");
+        $(".five i").toggleClass("fa-chevron-down");
+    });
 
-        $(".six").click(function(){
-            $(".f").fadeToggle(300);
-            $(".six i").toggleClass("fa-chevron-right");
-            $(".six i").toggleClass("fa-chevron-down");
-        });
+    $(".six").click(function () {
+        $(".f").fadeToggle(300);
+        $(".six i").toggleClass("fa-chevron-right");
+        $(".six i").toggleClass("fa-chevron-down");
+    });
 
-        $(".seven").click(function(){
-            $(".g").fadeToggle(300);
-            $(".seven i").toggleClass("fa-chevron-right");
-            $(".seven i").toggleClass("fa-chevron-down");
-        });
+    $(".seven").click(function () {
+        $(".g").fadeToggle(300);
+        $(".seven i").toggleClass("fa-chevron-right");
+        $(".seven i").toggleClass("fa-chevron-down");
+    });
 
-        $(".eight").click(function(){
-            $(".h").fadeToggle(300);
-            $(".eight i").toggleClass("fa-chevron-right");
-            $(".eight i").toggleClass("fa-chevron-down");
-        });
+    $(".eight").click(function () {
+        $(".h").fadeToggle(300);
+        $(".eight i").toggleClass("fa-chevron-right");
+        $(".eight i").toggleClass("fa-chevron-down");
+    });
 
-        $(".nine").click(function(){
-            $(".i").fadeToggle(300);
-            $(".nine i").toggleClass("fa-chevron-right");
-            $(".nine i").toggleClass("fa-chevron-down");
-
-        });
+    $(".nine").click(function () {
+        $(".i").fadeToggle(300);
+        $(".nine i").toggleClass("fa-chevron-right");
+        $(".nine i").toggleClass("fa-chevron-down");
 
     });
 
+});
 
-    $(document).ready(function() {
-        $("#top").click(function() {
+
+$(document).ready(function () {
+    $("#top").click(function () {
         $('html, body').animate({
             scrollTop: $("html, body").offset().top
         }, 1000);
     });
-        $("#rules").click(function() {
+    $("#rules").click(function () {
         $('html, body').animate({
             scrollTop: $("#rules-sec").offset().top
         }, 1000);
     });
-        $("#staff").click(function() {
+    $("#staff").click(function () {
         $('html, body').animate({
             scrollTop: $("#staff-sec").offset().top
         }, 1000);
     });
-        $("#brand-top").click(function() {
+    $("#brand-top").click(function () {
         $('html, body').animate({
             scrollTop: $("html, body").offset().top
         }, 1000);
@@ -124,7 +124,7 @@ $(document).ready(function() {
 });
 
 
-var ypos,cover1,cover2,cover3;
+var ypos, cover1, cover2, cover3;
 
 function parallax() {
     ypos = window.pageYOffset;

@@ -431,57 +431,65 @@ small {
 }
 
 footer.page-footer .footer-copyright {
-   height: auto!important;
+   height: auto !important;
    margin-bottom: -15px
 }
 
 h3 {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.35em;text-align: center;
-  margin-top: 2px;
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 1.35em;
+   text-align: center;
+   margin-top: 2px;
 }
 
 .github {
-    position: absolute;
-    right: 10px;
-    font-size: 16px;
-    z-index: 1;
-    color: #ddd;
+   position: absolute;
+   right: 10px;
+   font-size: 16px;
+   z-index: 1;
+   color: #ddd;
 }
 
 .github-icon {
-    font-family: FontAwesome;
+   font-family: FontAwesome;
 }
 
 .github-icon::before {
-    content: '\f09b'
+   content: '\f09b'
 }
 
 @media only screen and (max-width:991px) {
+
    .cover-2 h2,
    .cover-2 p {
       width: 100%
    }
+
    .online-part {
       padding: 25% .7%
    }
+
    .rule {
       padding: 15px
    }
+
    .useful {
       margin-top: 0;
       margin: 0
    }
+
    .discord-widget {
       padding-left: 0;
       -webkit-transform: translateX(25%);
       -ms-transform: translateX(25%);
       transform: translateX(25%)
    }
+
    .admins>ul>a {
       display: block;
       border-radius: 0
    }
+
    .head-icon {
       width: 20px;
       height: 20px;
@@ -489,21 +497,26 @@ h3 {
       float: left;
       border-radius: 50%
    }
+
    .modal li {
       display: block;
       width: 100%;
       padding: 5px 70px
    }
+
    .modal-msg {
       margin: 25px 0;
       padding: 5px
    }
+
    .nav-wrapper {
       background: #111
    }
+
    .modal.modal-fixed-footer .modal-content {
       padding: 10px
    }
+
    nav .nav-wrapper li>a {
       font-weight: 500;
       font-size: 1em

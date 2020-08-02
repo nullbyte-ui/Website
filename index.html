@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!--
+
+<head>
+   <!--
          Copyright 2017 Aggelos Sarris and contributors
 
          Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,75 +18,91 @@
          limitations under the License.
 
          -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Home | TotalFreedom Minecraft Server</title>
-      <meta name="author" content="aggelosQQ, scripthead">
-      <meta name="keywords" content="TF,minecraft,totalfreedom,free op,server,worldedit,freebuild">
-      <meta name="description" content="TotalFreedom is the first Free OP Minecraft server, which is up and running since 2010! play.totalfreedom.me">
-      <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
-      <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-      <link async rel="stylesheet" href="css/component.min.css">
-      <link async rel="stylesheet" href="css/global.css">
-      <link async rel="stylesheet" href="css/main.css">
-      <link async rel="icon" href="favicon.png" type="image/png">
-      <link async rel="shortcut icon" href="favicon.png" type="image/png">
-      <script>! function(a, b, c, d, e, f, g){a.GoogleAnalyticsObject=e, a[e]=a[e] || function(){(a[e].q=a[e].q || []).push(arguments)}, a[e].l=1 * new Date, f=b.createElement(c), g=b.getElementsByTagName(c)[0], f.async=1, f.src=d, g.parentNode.insertBefore(f, g)}(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-74643356-2", "auto"), ga("send", "pageview"); </script>
-   </head>
-   <body>
-      <div class="navbar-fixed">
-         <nav class="transparent z-depth-0" id="menu">
-            <div class="nav-wrapper z-depth-0">
-               <a href="#" id="brand-top" class="brand-logo"><small class="hide-on-med-and-down">play.</small>TotalFreedom<small class="hide-on-med-and-down">.me</small></a>
-               <a href="#" data-activates="mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
-               <ul class="right hide-on-med-and-down cl-effect-14" id="cl-effect-14">
-                  <li><a href="#" id="top">Home</a></li>
-                  <li><a href="#" id="rules">Rules</a></li>
-                  <li><a href="/emailappeal">Email Appeal</a></li>
-                  <li><a href="#" id="staff">Staff</a></li>
-                  <li><a href="/masterbuilders">Masterbuilders</a></li>
-                  <li><a href="https://totalfreedom.boards.net" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="You will be redirected to totalfreedom.boards.net">Forum</a></li>
-               </ul>
-               <ul class="side-nav" id="mobile">
-                  <li><a href="#header">Home</a></li>
-                  <li><a href="#rules">Rules</a></li>
-                  <li><a href="/emailappeal">Email Appeal</a></li>
-                  <li><a href="#staff">Staff</a></li>
-                  <li><a href="masterbuilders/">Masterbuilders</a></li>
-                  <li><a href="https://totalfreedom.boards.net">Forum</a></li>
-               </ul>
-            </div>
-         </nav>
-      </div>
-      <a href="https://github.com/TFPatches/Website" class="github" aria-hidden="true"><span class="github-icon"></span> Edit on GitHub</a>
-      <div class="section active cover-1" id="header">
-         <div class="online-part">
-            <h3 id="server-status"> <span id="online"></span></h3>
-            <a href="#onlineplayers" class="button modal-trigger" data-target="onlineplayers">Online Players</a>
-            <p style="font-size: 1em;line-height: 69px;" id="lastupdate"></p>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Home | TotalFreedom Minecraft Server</title>
+   <meta name="author" content="aggelosQQ, scripthead">
+   <meta name="keywords" content="TF,minecraft,totalfreedom,free op,server,worldedit,freebuild">
+   <meta name="description"
+      content="TotalFreedom is the first Free OP Minecraft server, which is up and running since 2010! play.totalfreedom.me">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
+   <link async rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+   <link async rel="stylesheet" href="css/component.min.css">
+   <link async rel="stylesheet" href="css/global.css">
+   <link async rel="stylesheet" href="css/main.css">
+   <link async rel="icon" href="favicon.png" type="image/png">
+   <link async rel="shortcut icon" href="favicon.png" type="image/png">
+   <script>
+      ! function (a, b, c, d, e, f, g) {
+         a.GoogleAnalyticsObject = e, a[e] = a[e] || function () {
+               (a[e].q = a[e].q || []).push(arguments)
+            }, a[e].l = 1 * new Date, f = b.createElement(c), g = b.getElementsByTagName(c)[0], f.async = 1, f.src = d,
+            g.parentNode.insertBefore(f, g)
+      }(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create",
+         "UA-74643356-2", "auto"), ga("send", "pageview");
+   </script>
+</head>
+
+<body>
+   <div class="navbar-fixed">
+      <nav class="transparent z-depth-0" id="menu">
+         <div class="nav-wrapper z-depth-0">
+            <a href="#" id="brand-top" class="brand-logo"><small
+                  class="hide-on-med-and-down">play.</small>TotalFreedom<small
+                  class="hide-on-med-and-down">.me</small></a>
+            <a href="#" data-activates="mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down cl-effect-14" id="cl-effect-14">
+               <li><a href="#" id="top">Home</a></li>
+               <li><a href="#" id="rules">Rules</a></li>
+               <li><a href="/emailappeal">Email Appeal</a></li>
+               <li><a href="#" id="staff">Staff</a></li>
+               <li><a href="/masterbuilders">Masterbuilders</a></li>
+               <li><a href="https://totalfreedom.boards.net" class="tooltipped" data-position="bottom" data-delay="50"
+                     data-tooltip="You will be redirected to totalfreedom.boards.net">Forum</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#rules">Rules</a></li>
+               <li><a href="/emailappeal">Email Appeal</a></li>
+               <li><a href="#staff">Staff</a></li>
+               <li><a href="masterbuilders/">Masterbuilders</a></li>
+               <li><a href="https://totalfreedom.boards.net">Forum</a></li>
+            </ul>
          </div>
-         <div id="onlineplayers" class="modal modal-fixed-footer">
-            <div class="modal-content">
-               <h4 id="players-online">
-               </h4>
-               <ul id="players"></ul>
-               <br/>
-               <div class="modal-msg">
-                  <h5>Why don't you visit us yourself?</h5>
-                  <span class="ip">play.totalfreedom.me</span>
-               </div>
-            </div>
-            <div class="modal-footer">
-               <a href="#!" class="modal-action modal-close btn-flat waves-effect waves-dark">Close</a>
+      </nav>
+   </div>
+   <a href="https://github.com/TFPatches/Website" class="github" aria-hidden="true"><span class="github-icon"></span>
+      Edit on GitHub</a>
+   <div class="section active cover-1" id="header">
+      <div class="online-part">
+         <h3 id="server-status"> <span id="online"></span></h3>
+         <a href="#onlineplayers" class="button modal-trigger" data-target="onlineplayers">Online Players</a>
+         <p style="font-size: 1em;line-height: 69px;" id="lastupdate"></p>
+      </div>
+      <div id="onlineplayers" class="modal modal-fixed-footer">
+         <div class="modal-content">
+            <h4 id="players-online">
+            </h4>
+            <ul id="players"></ul>
+            <br />
+            <div class="modal-msg">
+               <h5>Why don't you visit us yourself?</h5>
+               <span class="ip">play.totalfreedom.me</span>
             </div>
          </div>
+         <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat waves-effect waves-dark">Close</a>
+         </div>
       </div>
-      <div class="section cover-2" id="rules-sec">
-         <div class="container">
+   </div>
+   <div class="section cover-2" id="rules-sec">
+      <div class="container">
          <h1 class="section-title">Server Conduct Policy</h1>
          <div class="rules-section">
-            <h2 id="rules-title" class="one waves-effect waves-brown">Category 1 (Permanent Bannable Offenses) <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <h2 id="rules-title" class="one waves-effect waves-brown">Category 1 (Permanent Bannable Offenses) <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
             <div class="rule a">
                <p>a. Attempts at harming the server.</p>
                <p>b. Repeated rule-breaking (recurring category 2 & 3 offenses or punishment bypassing).</p>
@@ -95,11 +112,13 @@
                <p>f. Unauthorized access to admin-exclusive resources.</p>
                <p>g. Using an exploit that restricts a players experience.</p>
                <p>h. Attempts to harm any (ex)member of TotalFreedom.</p>
-               <p>i. Threatening to commit/committing illegal activities that violate US Law on any official TotalFreedom platform.</p>
-         </div>
+               <p>i. Threatening to commit/committing illegal activities that violate US Law on any official
+                  TotalFreedom platform.</p>
+            </div>
          </div>
          <div class="rules-section">
-            <h2 id="rules-title" class="two waves-effect waves-brown">Category 2 (Temporary Bannable Offenses) <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <h2 id="rules-title" class="two waves-effect waves-brown">Category 2 (Temporary Bannable Offenses) <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
             <div class="rule b">
                <p>a. Modifying other players’ builds (with intent) without permission from the builder.</p>
                <p>b. Tricking players into breaking a rule.</p>
@@ -110,189 +129,231 @@
             </div>
          </div>
          <div class="rules-section">
-            <h2 id="rules-title" class="three waves-effect waves-brown">Category 3 (Minor Offenses) <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <div class="rule c">          
+            <h2 id="rules-title" class="three waves-effect waves-brown">Category 3 (Minor Offenses) <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <div class="rule c">
                <p>a. Bigotry.</p>
                <p>b. Spamming commands or chat.</p>
                <p>c. Being a nuisance to other players.</p>
                <p>d. Interfering with an admin doing their job.</p>
                <p>e. Having a nickname that is unreadable, i.e. admins cannot use /realname on it. </p>
-               <p>f. A tag/nick that implies an official rank that they do not have or one that impersonates another player.</p>
+               <p>f. A tag/nick that implies an official rank that they do not have or one that impersonates another
+                  player.</p>
                <p>g. Pornographic builds if in a 250 block radius of spawn.</p>
-               <p>h. Advertising a server more than once in a 1 hour period.</p></div>
+               <p>h. Advertising a server more than once in a 1 hour period.</p>
+            </div>
          </div>
          <!--<p class="caution" style="margin-bottom: -45px;"><i class="fa fa-exclamation-triangle"></i> TotalFreedom does not accept donations.</p>-->
          <ul class="rest">
             <li>
-               <a href="https://totalfreedom.boards.net/thread/65799" class="readmore waves-effect waves-light">Read the Conduct Policy</a>
+               <a href="https://totalfreedom.boards.net/thread/65799" class="readmore waves-effect waves-light">Read the
+                  Conduct Policy</a>
             </li>
          </ul>
          <h1 class="section-title">Support/Help</h1>
          <div class="rules-section">
-            <h2 id="rules-title" class="six">Saving Builds <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <p class="rule f">To save your builds (i.e. create a WorldEdit schematic), first use the //wand tool to select the bounds of your build (i.e. the opposite corners of your build). Then, type //copy to place your build on the clipboard, and type //schem save nameofbuild to save your build (replacing nameofbuild with a unique name of your own).<br/> To load a schematic back into the world, do //schem load nameofbuild, and then //paste..</p>
+            <h2 id="rules-title" class="six">Saving Builds <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <p class="rule f">To save your builds (i.e. create a WorldEdit schematic), first use the //wand tool to
+               select the bounds of your build (i.e. the opposite corners of your build). Then, type //copy to place
+               your build on the clipboard, and type //schem save nameofbuild to save your build (replacing nameofbuild
+               with a unique name of your own).<br /> To load a schematic back into the world, do //schem load
+               nameofbuild, and then //paste..</p>
          </div>
          <div class="rules-section">
-            <h2 id="rules-title" class="seven">Flatlands <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <p class="rule g">This server features an additional flat-land building world which is very useful for building intricate creations. You can access this world by typing /flatlands, and you can get back to the main world by typing /flatlands again.</p>
+            <h2 id="rules-title" class="seven">Flatlands <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <p class="rule g">This server features an additional flat-land building world which is very useful for
+               building intricate creations. You can access this world by typing /flatlands, and you can get back to the
+               main world by typing /flatlands again.</p>
          </div>
          <div class="rules-section">
-            <h2 id="rules-title" class="eight">Gamemodes <i class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
-            <p class="rule h">You are free to use creative or survival mode on the server. For creative, type /creative. For survival, type /survival. </p>
+            <h2 id="rules-title" class="eight">Gamemodes <i
+                  class="fa fa-chevron-right rules-icon hide-on-med-and-down"></i></h2>
+            <p class="rule h">You are free to use creative or survival mode on the server. For creative, type /creative.
+               For survival, type /survival. </p>
          </div>
       </div>
-         </div>
-      </div>
-      <div class="section cover-3" id="staff-sec">
-      <br/>
+   </div>
+   </div>
+   <div class="section cover-3" id="staff-sec">
+      <br />
       <h1 class="section-title" style="margin-bottom: 10px;">Upper-Level Staff Members</h1>
       <h3>Last updated August 1st, 2020</h3>
       <div class="admins">
          <h2 class="rank">Executives</h2>
          <ul id="executiveboard">
             <a href="https://totalfreedom.boards.net/user/20408" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead - Owner</li>
+               <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead
+                  - Owner</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/3" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/markbyron/32.png" class="responsive-img head-icon">markbyron - Founder</li>
+               <li> <img src="https://mc-heads.net/avatar/markbyron/32.png" class="responsive-img head-icon">markbyron -
+                  Founder</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/1514" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/Madgeek1450/32.png" class="responsive-img head-icon">Madgeek1450 - Co-Founder</li>
+               <li> <img src="https://mc-heads.net/avatar/Madgeek1450/32.png"
+                     class="responsive-img head-icon">Madgeek1450 - Co-Founder</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/1" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 - Forum Owner & Manager</li>
+               <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 -
+                  Forum Owner & Manager</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/22952" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu - Admin Officer</li>
+               <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu -
+                  Admin Officer</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/23874" target="_blank" class="waves-effect waves-dark">
-              <li> <img src="https://mc-heads.net/avatar/Rhymix/32.png" class="resonsive-img head-icon">Rhymix - Creative Designer</li>
+               <li> <img src="https://mc-heads.net/avatar/Rhymix/32.png" class="resonsive-img head-icon">Rhymix -
+                  Creative Designer</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/19507" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/DarthZonarius/32.png" class="responsive-img head-icon">DarthZonarius  - Server Liaison</li>
+               <li> <img src="https://mc-heads.net/avatar/DarthZonarius/32.png"
+                     class="responsive-img head-icon">DarthZonarius - Server Liaison</li>
             </a>
          </ul>
          <h2 class="rank">Assistant Executives</h2>
          <ul id="assistexecboard">
             <a href="https://totalfreedom.boards.net/user/22775" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/fionnn/32.png" class="responsive-img head-icon">fionnn - Assistant Admin Officer</li>
+               <li> <img src="https://mc-heads.net/avatar/fionnn/32.png" class="responsive-img head-icon">fionnn -
+                  Assistant Admin Officer</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/23832" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/Zevante/32.png" class="responsive-img head-icon">Zevante - Assistant Admin Officer</li>
+               <li> <img src="https://mc-heads.net/avatar/Zevante/32.png" class="responsive-img head-icon">Zevante -
+                  Assistant Admin Officer</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/23930" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/Lyicx/32.png" class="responsive-img head-icon">Lyicx - Assistant Server Liaison</li>
+               <li> <img src="https://mc-heads.net/avatar/Lyicx/32.png" class="responsive-img head-icon">Lyicx -
+                  Assistant Server Liaison</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/5863" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/OxElmonxO/32.png" class="responsive-img head-icon">OxElmonxO - Assistant Server Liaison</li>  
+               <li> <img src="https://mc-heads.net/avatar/OxElmonxO/32.png" class="responsive-img head-icon">OxElmonxO -
+                  Assistant Server Liaison</li>
             </a>
             <a href="https://totalfreedom.boards.net/user/21917" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/squareMC/32.png" class="responsive-img head-icon">squareMC - Assistant Creative Designer</li>
+               <li> <img src="https://mc-heads.net/avatar/squareMC/32.png" class="responsive-img head-icon">squareMC -
+                  Assistant Creative Designer</li>
             </a>
-            </ul>
-      <h2 class="rank">Forum Staff</h2>
-      <ul id="modboard">
-         <a href="https://totalfreedom.boards.net/user/1" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 - Forum Admin</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/20408" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead - Forum Admin</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/10099" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/StevenNL2000/32.png" class="responsive-img head-icon">StevenNL2000 - Forum Admin</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/22952" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu - Forum Admin</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/10700" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/JJ_Jaguar2000/32.png" class="responsive-img head-icon">JJ_Jaguar2000 - Forum Mod</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/84" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/Cowgomooo12/32.png" class="responsive-img head-icon">Cowgomooo12 - Forum Mod</li>
-         </a>
-         <a href="https://totalfreedom.boards.net/user/3448" target="_blank" class="waves-effect waves-dark">
-            <li> <img src="https://mc-heads.net/avatar/TheMinecraft/32.png" class="responsive-img head-icon">TheMinecraft - Forum Mod</li>
-         </a>
-      </ul>
+         </ul>
+         <h2 class="rank">Forum Staff</h2>
+         <ul id="modboard">
+            <a href="https://totalfreedom.boards.net/user/1" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/Finest95/32.png" class="responsive-img head-icon">Finest95 -
+                  Forum Admin</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/20408" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/scripthead/32.png" class="responsive-img head-icon">scripthead
+                  - Forum Admin</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/10099" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/StevenNL2000/32.png"
+                     class="responsive-img head-icon">StevenNL2000 - Forum Admin</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/22952" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/zeseryu/32.png" class="responsive-img head-icon">zeseryu -
+                  Forum Admin</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/10700" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/JJ_Jaguar2000/32.png"
+                     class="responsive-img head-icon">JJ_Jaguar2000 - Forum Mod</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/84" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/Cowgomooo12/32.png"
+                     class="responsive-img head-icon">Cowgomooo12 - Forum Mod</li>
+            </a>
+            <a href="https://totalfreedom.boards.net/user/3448" target="_blank" class="waves-effect waves-dark">
+               <li> <img src="https://mc-heads.net/avatar/TheMinecraft/32.png"
+                     class="responsive-img head-icon">TheMinecraft - Forum Mod</li>
+            </a>
+         </ul>
          <h1 class="rank">Internal Affairs</h1>
          <ul id="internalaffairs">
             <a href="https://totalfreedom.boards.net/user/23832" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/Zevante/32.png" class="responsive-img head-icon">Zevante - Leader</li>
-            </a> 
+               <li> <img src="https://mc-heads.net/avatar/Zevante/32.png" class="responsive-img head-icon">Zevante -
+                  Leader</li>
+            </a>
             <a href="https://totalfreedom.boards.net/user/23037" target="_blank" class="waves-effect waves-dark">
                <li> <img src="https://mc-heads.net/avatar/Tozzit/32.png" class="responsive-img head-icon">Tozzit</li>
-            </a> 
+            </a>
             <a href="https://totalfreedom.boards.net/user/16482" target="_blank" class="waves-effect waves-dark">
-               <li> <img src="https://mc-heads.net/avatar/mmmmmonke/32.png" class="responsive-img head-icon">mmmmmonke</li>
+               <li> <img src="https://mc-heads.net/avatar/mmmmmonke/32.png" class="responsive-img head-icon">mmmmmonke
+               </li>
             </a>
             <a href="https://totalfreedom.boards.net/user/22775" target="_blank" class="waves-effect waves-dark">
                <li> <img src="https://mc-heads.net/avatar/fionnn/32.png" class="responsive-img head-icon">fionnn</li>
             </a>
-         </ul>         
-      <div class="container">
-         <ul class="rest">
-            <li><a href="/staff" class="readmore waves-effect waves-light">See the rest of the staff</a></li>
-            <br/>
          </ul>
-         <br/>
-         <hr>
-         <br/>
-         <div class="row">
-            <div class="col s12 m12 l8">
-               <ul class="useful">
-                  <h3 style="text-align: center;">Useful Links</h3>
-                  <a href="http://totalfreedom.boards.net" target="_blank" class="readmore waves-effect waves-dark">
-                     <li><i class="fa fa-comments icon"></i><br/> Forum</li>
-                  </a>
-                  <a href="https://totalfreedom.boards.net/thread/65799" target="_blank" class="readmore waves-effect waves-dark">
-                     <li><i class="fa fa-ban icon"></i><br/> Conduct Policy</li>
-                  </a>
-                  <a href="http://github.com/TotalFreedom" target="_blank" class="readmore waves-effect waves-dark">
-                     <li><i class="fa fa-github icon"></i><br/>Github</li>
-                  </a>
-                  <a href="https://twitter.com/totalfreedommc" target="_blank" class="readmore waves-effect waves-dark">
-                     <li><i class="fa fa-twitter icon"></i><br/> Twitter</li>
-                  </a>
-                  <a href="https://discord.gg/hdCA22p" target="_blank" class="readmore hide-on-large-only waves-effect waves-dark">
-                     <li><img src="images/fa-discord.png" style="width: 27.734; height: 32px;"><br/> Discord</li>
-                  </a>
-               </ul>
-            </div>
-            <div class="col s12 m12 l4 hide-on-med-and-down">
-<!-- <h3 style="text-align: center;" class="discord-widget-title">Join our Discord!</h3> -->
-               <iframe src="https://discordapp.com/widget?id=142361999538520065&theme=dark" class="discord-widget" width="375" height="450" align="center" allowtransparency="true" frameborder="0"></iframe>
-               <br>
-               <hr>
-               <br>
-               <p align="center" class="text-align: center;">
-            </div>
-         </div>
-         <footer class="page-footer transparent">
-            <div class="container">
-               <div class="footer-copyright">
-                  <div class="container">
-                     <hr>
-                     TotalFreedom &copy; 2010 - <span id="curYear"></span>
-                     <a class="grey-text text-lighten-4 right" href="https://aggelosqq.com" target="_blank">Designed by aggelosQQ</a>
-                  </div>
+         <div class="container">
+            <ul class="rest">
+               <li><a href="/staff" class="readmore waves-effect waves-light">See the rest of the staff</a></li>
+               <br />
+            </ul>
+            <br />
+            <hr>
+            <br />
+            <div class="row">
+               <div class="col s12 m12 l8">
+                  <ul class="useful">
+                     <h3 style="text-align: center;">Useful Links</h3>
+                     <a href="http://totalfreedom.boards.net" target="_blank" class="readmore waves-effect waves-dark">
+                        <li><i class="fa fa-comments icon"></i><br /> Forum</li>
+                     </a>
+                     <a href="https://totalfreedom.boards.net/thread/65799" target="_blank"
+                        class="readmore waves-effect waves-dark">
+                        <li><i class="fa fa-ban icon"></i><br /> Conduct Policy</li>
+                     </a>
+                     <a href="http://github.com/TotalFreedom" target="_blank" class="readmore waves-effect waves-dark">
+                        <li><i class="fa fa-github icon"></i><br />Github</li>
+                     </a>
+                     <a href="https://twitter.com/totalfreedommc" target="_blank"
+                        class="readmore waves-effect waves-dark">
+                        <li><i class="fa fa-twitter icon"></i><br /> Twitter</li>
+                     </a>
+                     <a href="https://discord.gg/hdCA22p" target="_blank"
+                        class="readmore hide-on-large-only waves-effect waves-dark">
+                        <li><img src="images/fa-discord.png" style="width: 27.734; height: 32px;"><br /> Discord</li>
+                     </a>
+                  </ul>
+               </div>
+               <div class="col s12 m12 l4 hide-on-med-and-down">
+                  <!-- <h3 style="text-align: center;" class="discord-widget-title">Join our Discord!</h3> -->
+                  <iframe src="https://discordapp.com/widget?id=142361999538520065&theme=dark" class="discord-widget"
+                     width="375" height="450" align="center" allowtransparency="true" frameborder="0"></iframe>
+                  <br>
+                  <hr>
+                  <br>
+                  <p align="center" class="text-align: center;">
                </div>
             </div>
-         </footer>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-      <script src="https://use.fontawesome.com/cb2592f0cc.js"></script>
-      <script src="js/index.js"></script>
-      <script src="js/moment.js"></script>
-      <script src="js/jquery.cookies.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/functions.js"></script>
-      <script>
-         // All Json content is loaded respectively into #(item)
-         var jsonUrl="https://totalfreedom.me/tfinfo/";
-         var jsonContent=[ "players"]; $(document).ready(function(){
-            loadJson(jsonUrl, jsonContent);
-         });
-      </script>
-   </body>
+            <footer class="page-footer transparent">
+               <div class="container">
+                  <div class="footer-copyright">
+                     <div class="container">
+                        <hr>
+                        TotalFreedom &copy; 2010 - <span id="curYear"></span>
+                        <a class="grey-text text-lighten-4 right" href="https://aggelosqq.com" target="_blank">Designed
+                           by aggelosQQ</a>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+         <script src="https://use.fontawesome.com/cb2592f0cc.js"></script>
+         <script src="js/index.js"></script>
+         <script src="js/moment.js"></script>
+         <script src="js/jquery.cookies.js"></script>
+         <script src="js/main.js"></script>
+         <script src="js/functions.js"></script>
+         <script>
+            // All Json content is loaded respectively into #(item)
+            var jsonUrl = "https://totalfreedom.me/tfinfo/";
+            var jsonContent = ["players"];
+            $(document).ready(function () {
+               loadJson(jsonUrl, jsonContent);
+            });
+         </script>
+</body>
+
 </html>

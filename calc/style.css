@@ -30,7 +30,8 @@ select {
 	color: white;
 	cursor: pointer;
 	-webkit-appearance: none;
-	
+}
+
 select::before {
   border-bottom-style: solid;
   border-top: none;

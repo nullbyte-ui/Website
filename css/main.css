@@ -82,7 +82,8 @@ body {
 .rule {
    z-index: 100;
    display: none;
-   padding: 30px
+   padding: 30px;
+   text-align: left;
 }
 
 #rules-title,

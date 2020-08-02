@@ -33,12 +33,12 @@ select {
 }
 
 select::before {
-  border-bottom-style: solid;
-  border-top: none;
+	border-bottom-style: solid;
+	border-top: none;
 }
 
 select:after {
-  margin-top: 7px;
-  border-top-style: solid;
-  border-bottom: none;
+	margin-top: 7px;
+	border-top-style: solid;
+	border-bottom: none;
 }

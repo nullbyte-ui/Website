@@ -16,19 +16,19 @@
 
 */
 
-$(document).ready(function() {
+$(document).ready(function () {
    $(".button-collapse").sideNav();
 
 
 });
 
-$(function(){
+$(function () {
    $(".build").slice(0, 6).show();
-   $("#load").click(function(e){
-       e.preventDefault();
-       $("div:hidden").slice(0, 6).show();
-       if($("div:hidden").length == 0){
-            $("#load").hide();
-       }
+   $("#load").click(function (e) {
+      e.preventDefault();
+      $("div:hidden").slice(0, 6).show();
+      if ($("div:hidden").length == 0) {
+         $("#load").hide();
+      }
    });
 });

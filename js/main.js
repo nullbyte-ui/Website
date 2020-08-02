@@ -16,7 +16,7 @@
    
 */
 
-$(document).ready(function() {
+$(document).ready(function () {
     $(".button-collapse").sideNav({
         closeOnClick: true
     });
@@ -26,7 +26,7 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     (new Date).getFullYear();
     $("#curYear").text((new Date).getFullYear());
 });

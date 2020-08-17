@@ -86,7 +86,7 @@ button:focus {
 }
 
 .card .card-image img {
-  height: 321.891px!important;
+    height: 321.891px !important;
 }
 
 .header {
@@ -164,22 +164,27 @@ hr {
     font-weight: 200;
     margin-top: 0px;
 }
+
 @media only screen and (max-width: 768px) {
     .header {
         padding: 5px;
     }
+
     .masterbuilders-list li {
         display: block;
         border-radius: 0;
     }
+
     button {
         width: 95%;
     }
+
     nav .brand-logo {
         margin-top: 13.5px;
         font-size: 1.8em;
     }
-    nav .nav-wrapper li > a {
+
+    nav .nav-wrapper li>a {
         font-weight: 500;
         font-size: 1em;
     }
